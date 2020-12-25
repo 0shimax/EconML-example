@@ -1,0 +1,27 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "causal",
+    "workspaceFolder": "/project/EconML-example",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "python.pythonPath": "/usr/bin/python3",
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": false,
+      "python.linting.flake8Enabled": true,
+      "python.linting.lintOnSave": true,
+      "python.formatting.provider": "black",
+      "editor.formatOnSave": true
+    },
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "coenraads.bracket-pair-colorizer-2",
+      "mechatroner.rainbow-csv",
+      "ionutvmi.path-autocomplete",
+      "esbenp.prettier-vscode",
+      "eamodio.gitlens",
+      "donjayamanne.githistory",
+      "ms-python.python",
+      "ms-python.vscode-pylance"
+    ],
+    "postCreateCommand": "apt install -y git && mkdir .githooks && touch .githooks/pre-push"
+  }

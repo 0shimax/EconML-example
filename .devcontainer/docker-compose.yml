@@ -1,0 +1,11 @@
+version: "3"
+services:
+  causal:
+    container_name: causal
+    image: sh7/causal:v0.1
+    command: sleep infinity
+    ports:
+      - 8888:8888
+    volumes:
+      - C:\Users\sh70k\project:/project
+      - C:\Users\sh70k\data:/data
